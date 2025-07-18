@@ -1,49 +1,61 @@
-# 🪙 Coin Toss Simulator
+# 🎲 Heads or Tails — Python Terminal Game
 
-This is a simple Python script that simulates a coin toss using the `random` module. It randomly chooses between **Heads** or **Tails** each time you run it.
-
----
-
-## 🧠 What It Teaches
-
-- How to use Python's `random` module
-- Conditional statements (`if-else`)
-- Simple simulation logic
+A fun and interactive terminal-based Heads or Tails game written in Python.  
+Features ASCII art, random coin toss, and clear win/lose results for a simple yet engaging experience.
 
 ---
 
-## 💻 How to Use
+## 🧩 Features
 
-1. Make sure you have Python installed.
-2. Save the code in a file named `coin_toss.py`
-3. Run the script using:
+- User chooses Heads or Tails
+- Computer randomly tosses the coin
+- ASCII coin art displayed for result
+- Win/Lose feedback with emoji
+- Input validation for better UX
+- ASCII banner logo for polish
+
+---
+
+## 🖥️ How to Run
+
+1. Save the script as `heads_or_tails.py`
+2. Run it with Python:
 
 ```bash
-python coin_toss.py
+python heads_or_tails.py
 ```
-4. It will output either:
 
-```
-Heads
-```
-or
-
-```
-Tails
-```
+3. Choose `1` for Heads or `2` for Tails when prompted.
 
 ---
 
-## 🧑‍💻 Code
+## 📸 Sample Output
 
-```python
-import random
+```
+ /$$   /$$                                                  
+| $$$ | $$                                                  
+| $$$$| $$  /$$$$$$   /$$$$$$$  /$$$$$$$  /$$$$$$  /$$$$$$$ 
+| $$ $$ $$ |____  $$ /$$_____/ /$$_____/ /$$__  $$| $$__  $$
+| $$  $$$$  /$$$$$$$| $$      | $$      | $$  \ $$| $$  \ $$
+| $$\  $$$ /$$__  $$| $$      | $$      | $$  | $$| $$  | $$
+| $$ \  $$|  $$$$$$$|  $$$$$$$|  $$$$$$$|  $$$$$$/| $$  | $$
+|__/  \__/ \_______/ \_______/ \_______/ \______/ |__/  |__/
 
-data = random.randint(0, 1)
-if data == 1:
-    print("Heads")
-else:
-    print("Tails")
+Heads or Tails? If "Heads" press 1, else press 2. 1
+You choose: Head
+
+🎲 Tossing...
+
+Computer choose:
+  ╔════════╗  
+ ╔╝ ░░░▒▒▓ ╚╗ 
+╔╝ ░░░░▒▒▓▓ ╚╗
+║ ░░░TAIL▒▓▓ ║
+╚╗ ░░░▒▒▒▓▓ ╔╝
+ ╚╗ ░░░▒▒▓ ╔╝ 
+  ╚════════╝  
+
+😢 You Lost!
 ```
 
 ---
